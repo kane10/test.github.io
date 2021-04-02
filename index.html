@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faites connaissance avec les WebComponents</title>
+</head>
+
+<body>
+    <h1>Créons un composant User-card !!</h1>
+    <h2>Ce h2 n'est là que pour montrer le probleme de css Bleeding et l'utilité du ShadowDOM</h2>
+    <user-card first-name='Algassim' last-name='Kane' avatar='alkane.jpg'>
+        <a href="mailto:#" slot="link">E-mail</a>
+        <a href="#" slot="link">Blog</a>
+        <p slot="description">Je suis developpeur web</p>
+    </user-card>
+    <hr>
+    <h5>Une balise h5 en dehors de ma balise</h5>
+    <user-adr tel='78 523 39 92' adr='Dakar Benne Taly'>
+        <h5 slot="h5">Une autre balise h5 dans ma balise perso</h5>
+    </user-adr>
+    <script src="user-card.component.js"></script>
+</body>
+
+</html>
